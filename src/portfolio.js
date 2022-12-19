@@ -34,7 +34,7 @@ const projects = [
     name: 'University Rankings',
     description:
       'A website designed to visualize and compare world univeristy rankings through a cleaned and structured dataset.',
-    stack: ['react', 'npm', 'nodejs', 'localhost','PostgreSQL'],
+    stack: ['react', 'npm', 'node.js', 'plotly.js','PostgreSQL'],
     sourceCode: 'https://github.com/shrays/University-Rankings',
     livePreview: 'https://github.com/shrays/University-Rankings',
   },
