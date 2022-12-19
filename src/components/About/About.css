@@ -6,9 +6,13 @@
 
 .about__name {
   text-transform: uppercase;
-  background: linear-gradient(to right, var(--clr-secondary) 0%, var(--clr-primary) 100%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--clr-secondary) 0%,
+    var(--clr-primary) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about__role {
