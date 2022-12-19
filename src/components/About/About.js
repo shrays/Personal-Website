@@ -14,12 +14,12 @@ const About = () => {
        <img style={{borderRadius: 10000, marginBottom: 20}} height="250px" alt="Avatar placeholder" src={photo} />
       )}
       {name && (
-        <h1>
-          I{'\''}m <span className='about__name'>{name}</span>.
+        <h1 >
+          <center>I{'\''}m <span className='about__name'>{name}.</span></center>
         </h1>
       )}
 
-      {role && <h2 className='about__role'>{role}</h2>}
+      {role && <h2 className='about__role'><center>{role}</center></h2>}
       <p className='about__desc'> <center>{description}</center></p>
       <div className='about__contact center'>
         {social && (
