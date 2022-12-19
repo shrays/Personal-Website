@@ -1,7 +1,7 @@
 .about {
   flex-direction: column;
   margin-top: 3em;
-  margin-bottom: 9em;
+  margin-bottom: 7em;
 }
 
 .about__name {
@@ -16,21 +16,19 @@
 }
 
 .about__desc {
-  font-size: 1rem;
+  font-size: 1.1rem;
   max-width: 600px;
 }
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 1.8em;
 }
 
 .about .link--icon {
-  /* margin-right: 1.0em; */
-  transform: scale(1.4)
-}
-.about .link--iconlast {
-  transform: scale(1.4)
+  /* Should center margin addition automatically */
+  right: 0.85em;
+  transform: scale(1.4);
 }
 
 .about .btn--outline {

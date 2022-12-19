@@ -2,7 +2,7 @@ import aboutpic from "./components/Access/profile.png"
 
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://shrays.github.io/Website',
+  homepage: 'https://shrayswarup.com',
   title: 'SS.',
 }
 
@@ -12,7 +12,7 @@ const about = {
   name: 'Shray Swarup',
   role: 'A Computer and Data Science Student',
   description:
-    'CS Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Incoming intern at Deloitte.',
+    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Incoming intern at Deloitte.',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
