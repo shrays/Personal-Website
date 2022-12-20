@@ -6,10 +6,10 @@ const Header = () => {
   const { homepage, title } = header
 
   return (
-    <header className='header center'>
+    <header className="header center">
       <h5>
         {homepage ? (
-          <a href={homepage} className='link'>
+          <a href={homepage} className="link">
             {title}
           </a>
         ) : (

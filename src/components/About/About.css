@@ -6,9 +6,13 @@
 
 .about__name {
   text-transform: uppercase;
-  background: linear-gradient(to right, var(--clr-secondary) 0%, var(--clr-primary) 100%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    to right,
+    var(--clr-secondary) 0%,
+    var(--clr-primary) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about__role {
@@ -22,13 +26,18 @@
 
 .about__desc,
 .about__contact {
-  margin-top: 1.8em;
+  margin-top: 1.6em;
 }
 
 .about .link--icon {
-  /* Should center margin addition automatically */
-  right: 0.85em;
-  transform: scale(1.4);
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  flex: 1;
+}
+
+.about .img--icon {
+  width: 1.5em;
+  height: auto;
 }
 
 .about .btn--outline {

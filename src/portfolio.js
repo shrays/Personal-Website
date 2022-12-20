@@ -1,4 +1,4 @@
-import aboutpic from "./components/Access/profile.png"
+import aboutpic from './components/Access/profile.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -7,7 +7,7 @@ const header = {
 }
 
 const about = {
-  photo:aboutpic,
+  photo: aboutpic,
   // all the properties are optional - can be left empty or deleted
   name: 'Shray Swarup',
   role: 'A Computer and Data Science Student',
@@ -34,7 +34,7 @@ const projects = [
     name: 'University Rankings',
     description:
       'A website designed to visualize and compare world univeristy rankings through a cleaned and structured dataset.',
-    stack: ['react', 'npm', 'node.js', 'plotly.js','PostgreSQL'],
+    stack: ['react', 'npm', 'node.js', 'plotly.js', 'PostgreSQL'],
     sourceCode: 'https://github.com/shrays/University-Rankings',
     livePreview: 'https://github.com/shrays/University-Rankings',
   },
@@ -68,7 +68,7 @@ const skills = [
   'Tableau',
   'Adobe Photoshop',
   'Jira',
-  'Confluence'
+  'Confluence',
 ]
 
 const contact = {
