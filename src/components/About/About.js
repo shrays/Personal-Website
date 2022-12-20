@@ -44,7 +44,7 @@ const About = () => {
               </a>
             )}
 
-            {social.github && (
+            {contact.email && (
               <a
                 href={`mailto:${contact.email}`}
                 aria-label='email'
