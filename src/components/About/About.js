@@ -40,23 +40,21 @@ const About = () => {
           <>
             {social.github && (
               <a
-                style={{ marginRight: '20%' }}
                 href={social.github}
                 aria-label="github"
                 className="link link--icon"
               >
-                <GitHubIcon />
+                <GitHubIcon className="img--icon" />
               </a>
             )}
 
             {social.linkedin && (
               <a
-                style={{ marginRight: '20%' }}
                 href={social.linkedin}
                 aria-label="linkedin"
                 className="link link--icon"
               >
-                <LinkedInIcon />
+                <LinkedInIcon className="img--icon" />
               </a>
             )}
 
@@ -66,7 +64,7 @@ const About = () => {
                 aria-label="email"
                 className="link link--icon"
               >
-                <EmailIcon />
+                <EmailIcon className="img--icon" />
               </a>
             )}
           </>
