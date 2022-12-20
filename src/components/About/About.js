@@ -1,4 +1,4 @@
-import YouTubeIcon from '@mui/icons-material/YouTube'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import { contact, about } from '../../portfolio'
@@ -38,13 +38,13 @@ const About = () => {
       <div className="about__contact center">
         {social && (
           <>
-            {social.YouTube && (
+            {social.github && (
               <a
-                href={social.YouTube}
-                aria-label="YouTube"
+                href={social.github}
+                aria-label="github"
                 className="link link--icon"
               >
-                <YouTubeIcon className="img--icon" />
+                <GitHubIcon className="img--icon" />
               </a>
             )}
 
