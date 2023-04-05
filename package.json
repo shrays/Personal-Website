@@ -14,10 +14,10 @@
   },
   "homepage": "https://shrayswarup.com",
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.11.0",
-    "@mui/material": "^5.11.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.16",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -31,6 +31,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "prettier": "^2.8.7",
+    "react-scripts": "^5.0.1"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -42,10 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "prettier": "^2.8.1",
-    "react-scripts": "^5.0.1"
   }
 }
