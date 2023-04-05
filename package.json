@@ -1,6 +1,12 @@
 {
   "name": "shra-personal-site",
+  "description": "Personal Website and Portfolio for Shray Swarup",
   "version": "1.0.0",
+  "author": "Shray Swarup",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shrays/Personal-Website.git"
+  },
   "private": true,
   "homepage": "https://shrayswarup.com",
   "dependencies": {
