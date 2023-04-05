@@ -25,8 +25,8 @@ const projects = [
   {
     name: 'Crop Yield Predictor',
     description:
-      'Prediction models using current USDA crop data, past NOAA and future CMIP6 climate data, and GAEZv4 soil data. Visualize future projected yield data based on different climate emission scenarios using ML techniques.',
-    stack: ['Python', 'TensorFlow', 'SQL', 'Supabase', 'USDA API'],
+      'Prediction models using current USDA crop information, NOAA climate, CMIP6 climate, and GAEZv4 soil data. Visualize future projected yield data based on different climate emission scenarios using ML techniques.',
+    stack: ['Python', 'PyTorch', 'sklearn', 'SQL', 'Supabase', 'NASS API'],
     sourceCode: 'https://github.com/shrays',
     livePreview: 'https://github.com/shrays',
   },
