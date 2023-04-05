@@ -1,6 +1,6 @@
 {
-  "name": "personalwebsite",
   "version": "0.1.0",
+  "name": "shra-personal-site",
   "private": true,
   "homepage": "https://shrayswarup.com",
   "dependencies": {
