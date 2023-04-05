@@ -2,7 +2,7 @@
 
 This is the code for Shray Swarup's personal website and portfolio. It is a React project bootstrapped using `create-react-app` and deployed with CI using GitHub Pages.
 
-<img width="700" alt="Screenshot 2023-04-04 at 9 04 13 PM" src="https://user-images.githubusercontent.com/16968917/229986147-a374577b-3055-4f04-b9f3-cbdd2fc1eeae.png">
+<img width="700" alt="Shray Swarup" src="https://user-images.githubusercontent.com/16968917/229986147-a374577b-3055-4f04-b9f3-cbdd2fc1eeae.png">
 
 ## Getting Started
 
