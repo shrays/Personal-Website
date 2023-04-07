@@ -12,7 +12,7 @@ const about = {
   name: 'Shray Swarup',
   role: 'A Computer and Data Science Student',
   description:
-    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Incoming intern at Deloitte.',
+    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Incoming intern at Deloitte Consulting.',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
