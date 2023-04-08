@@ -12,7 +12,7 @@ const about = {
   name: 'Shray Swarup',
   role: 'A Computer and Data Science Student',
   description:
-    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Incoming intern at Deloitte.',
+    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Incoming intern at Deloitte Consulting.',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
@@ -25,8 +25,8 @@ const projects = [
   {
     name: 'Crop Yield Predictor',
     description:
-      'Prediction models using current USDA crop data, past NOAA and future CMIP6 climate data, and GAEZv4 soil data. Visualize future projected yield data based on different climate emission scenarios using ML techniques.',
-    stack: ['Python', 'TensorFlow', 'SQL', 'Supabase', 'USDA API'],
+      'Prediction models using current USDA crop information, NOAA climate, CMIP6 climate, and GAEZv4 soil data. Visualize future projected yield data based on different climate emission scenarios using ML techniques.',
+    stack: ['Python', 'PyTorch', 'sklearn', 'SQL', 'Supabase', 'NASS API'],
     sourceCode: 'https://github.com/shrays',
     livePreview: 'https://github.com/shrays',
   },
