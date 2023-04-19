@@ -47,7 +47,10 @@ const projects = [
     livePreview: 'https://github.com/shrays/sunhacks2021',
   },
 ]
-
+const lightbulb = {
+  // email is optional - if left empty Contact section won't show up
+  status: 'test',
+}
 const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
@@ -76,4 +79,4 @@ const contact = {
   email: 'svswarup@asu.edu',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, projects, lightbulb, skills, contact }

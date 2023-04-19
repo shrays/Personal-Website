@@ -4,7 +4,7 @@ import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills } from '../../portfolio'
+import { projects, skills, lightbulb } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -27,6 +27,18 @@ const Navbar = () => {
               className="link link--nav"
             >
               Projects
+            </a>
+          </li>
+        ) : null}
+        
+        {lightbulb.status ? (
+          <li className="nav__list-item">
+            <a
+              href="#skills"
+              onClick={toggleNavList}
+              className="link link--nav"
+            >
+              Lightbulb
             </a>
           </li>
         ) : null}
