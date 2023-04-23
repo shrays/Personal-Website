@@ -1,8 +1,9 @@
 # Personal Website
 
-This is the code for Shray Swarup's personal website and portfolio. It is a React project bootstrapped using `create-react-app` and deployed with CI using GitHub Pages.
+This is the code for my personal website and portfolio. It is a React project bootstrapped using `create-react-app` and deployed with CI using GitHub Pages.
 
-<img width="700" alt="Shray Swarup" src="https://user-images.githubusercontent.com/16968917/229986147-a374577b-3055-4f04-b9f3-cbdd2fc1eeae.png">
+<img width="1196" alt="PageDemo" src="https://user-images.githubusercontent.com/14226108/233829723-ce345262-335a-4dcb-952f-097715b6b077.png">
+
 
 ## Getting Started
 
