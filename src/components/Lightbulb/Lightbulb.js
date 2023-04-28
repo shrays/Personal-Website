@@ -5,8 +5,8 @@ import './Lightbulb.css';
 const Lightbulb = () => {
   // if (!lightbulb.status) return null;
 
-  const [status, setStatus] = useState('Awaiting');
-  const [power, setPower] = useState('Query');
+  const [status, setStatus] = useState('Awaiting Query');
+  const [power, setPower] = useState('[ ]');
 
   const handleClick = async () => {
     const response = await fetch('/.netlify/functions/toggle').then(response => response.json())
@@ -33,7 +33,12 @@ const Lightbulb = () => {
       </ul>
       <div className="status-container">
         <p>
-          <span style={{ color: status === 'Online' ? 'green' : (status === 'Offline' ? 'red' : 'white') }}>{status}</span>
+          <span
+            className={status === 'Awaiting' ? 'status-text' : ''}
+            style={{ color: status === 'Online' ? 'green' : status === 'Offline' ? 'red' : undefined, }}
+          >
+            {status}
+          </span>
           &nbsp;
            - 
           &nbsp;

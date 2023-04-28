@@ -17,6 +17,6 @@
   font-weight: bold;
 }
 
-.test {
-  color: var(--clr-fg);
+.status-text {
+  color: var(--clr-fg-alt);
 }
