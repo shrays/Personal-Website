@@ -31,7 +31,7 @@ const Navbar = () => {
           </li>
         ) : null}
         
-        {lightbulb.status ? (
+        {lightbulb.enabled ? (
           <li className="nav__list-item">
             <a
               href="#skills"
