@@ -3,7 +3,7 @@ import { lightbulb } from '../../portfolio';
 import './Lightbulb.css';
 
 const Lightbulb = () => {
-  // if (!lightbulb.status) return null;
+  if (!lightbulb.enabled) return null;
 
   const [status, setStatus] = useState('Awaiting Query');
   const [power, setPower] = useState('[ ]');

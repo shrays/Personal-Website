@@ -49,7 +49,7 @@ const projects = [
 ]
 const lightbulb = {
   // email is optional - if left empty Contact section won't show up
-  status: 'test',
+  enabled: true,
 }
 const skills = [
   // skills can be added or removed
