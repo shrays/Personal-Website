@@ -1,30 +1,26 @@
-
-//   return (
-//     <section className="section skills" id="skills">
-//       <h2 className="section__title">Control my Lamp</h2>
-//       {/* <ul className="skills__list">
-//         {skills.map((skill) => (
-//           <li key={uniqid()} className="skills__list-item btn btn--plain">
-//             {skill}
-//           </li>
-//         ))}
-//       </ul> */}
-//     </section>
-//   )
-// }
-
-// export default Lightbulb
-
+import React, { useState } from 'react';
 import { lightbulb } from '../../portfolio';
 import './Lightbulb.css';
 
 const Lightbulb = () => {
   // if (!lightbulb.status) return null;
 
+  const [status, setStatus] = useState('Awaiting');
+  const [power, setPower] = useState('Query');
+
   const handleClick = async () => {
     const response = await fetch('/.netlify/functions/toggle').then(response => response.json())
     console.log(JSON.stringify(response))
-    // console.log('Button clicked');
+
+    const resultStatus = response.results[0].status;
+    if (resultStatus === 'ok') {
+      setStatus('Online')
+      const power = response.results[0].power;
+      setPower(power.charAt(0).toUpperCase() + power.slice(1));
+    } else {
+      setStatus('Offline');
+      setPower('Off')
+    }
   };
 
   return (
@@ -35,6 +31,15 @@ const Lightbulb = () => {
           Toggle Lamp
         </li>
       </ul>
+      <div className="status-container">
+        <p>
+          <span style={{ color: status === 'Online' ? 'green' : (status === 'Offline' ? 'red' : 'white') }}>{status}</span>
+          &nbsp;
+           - 
+          &nbsp;
+          {power}
+        </p>
+      </div>
     </section>
   );
 };
