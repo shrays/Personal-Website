@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { lightbulb } from '../../portfolio';
 import './Lightbulb.css';
 
@@ -10,7 +10,7 @@ const Lightbulb = () => {
 
   const handleClick = async () => {
     const response = await fetch('/.netlify/functions/toggle').then(response => response.json())
-    console.log(JSON.stringify(response))
+    // console.log(JSON.stringify(response))
 
     const resultStatus = response.results[0].status;
     if (resultStatus === 'ok') {
@@ -23,11 +23,28 @@ const Lightbulb = () => {
     }
   };
 
+  useEffect(() => {
+    async function statusCheck() {
+      const response = await fetch('/.netlify/functions/status').then(response => response.json())
+      // console.log(JSON.stringify(response))
+
+      if (response[0].connected == true) {
+        setStatus('Online')
+        const power = response[0].power;
+        setPower(power.charAt(0).toUpperCase() + power.slice(1));
+      } else {
+        setStatus('Offline');
+        setPower('Off')
+      }
+    }
+    statusCheck();
+  }, []);
+
   return (
     <section className="section lightbulb" id="lightbulb">
       <h2 className="section__title">Control my Lamp</h2>
       <ul className="lightbulb__list">
-        <li className="lightbulb__list-item btn btn--plain" onClick={handleClick}>
+        <li className="lightbulb__list-item btn btn--plain btn--wide" onClick={handleClick}>
           Toggle Lamp
         </li>
       </ul>
