@@ -1,6 +1,6 @@
 # Personal Website
 
-This is the code for my personal website and portfolio. It is a React project bootstrapped using `create-react-app` and deployed with CI using GitHub Pages.
+This is the code for my personal website and portfolio. It is a React project bootstrapped using `create-react-app` and deployed using Netlify.
 
 <img width="1196" alt="PageDemo" src="https://user-images.githubusercontent.com/14226108/233829723-ce345262-335a-4dcb-952f-097715b6b077.png">
 
