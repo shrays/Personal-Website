@@ -42,7 +42,7 @@ const Lightbulb = () => {
 
   return (
     <section className="section lightbulb" id="lightbulb">
-      <h2 className="section__title">Control my Lamp</h2>
+      <h2 className="section__title">Control my Lamp (Beta)</h2>
       <ul className="lightbulb__list">
         <li className="lightbulb__list-item btn btn--plain btn--wide" onClick={handleClick}>
           Toggle Lamp
