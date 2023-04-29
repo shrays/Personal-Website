@@ -1,4 +1,4 @@
-import aboutpic from './components/Access/profile.png'
+import aboutpic from './components/Access/profile.webp'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
