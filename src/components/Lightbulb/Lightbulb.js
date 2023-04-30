@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { lightbulb } from '../../portfolio';
+import StatusIndicator from '../StatusIndicator/StatusIndicator';
 import './Lightbulb.css';
 
 const Lightbulb = () => {
@@ -49,18 +50,19 @@ const Lightbulb = () => {
         </li>
       </ul>
       <div className="status-container">
-        <p>
-          <span
-            className={status === 'Awaiting' ? 'status-text' : ''}
-            style={{ color: status === 'Online' ? 'green' : status === 'Offline' ? 'red' : undefined, }}
-          >
-            {status}
-          </span>
+        <StatusIndicator status={status === 'Online'} />
+        <span
+          className={status === 'Awaiting' ? 'status-text' : ''}
+          style={{ color: status === 'Online' ? 'green' : status === 'Offline' ? 'red' : undefined, }}
+        >
+          {status}
+        </span>
+        <span>
           &nbsp;
            - 
           &nbsp;
           {power}
-        </p>
+        </span>
       </div>
     </section>
   );
