@@ -30,7 +30,7 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
-        
+
         {lightbulb.enabled ? (
           <li className="nav__list-item">
             <a
