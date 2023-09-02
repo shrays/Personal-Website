@@ -18,7 +18,7 @@ exports.handler = async function () {
   const data = await response.json()
 
   return {
-    statusCode: 200,
+    statusCode: response.status,
     body: JSON.stringify(data),
   }
 }
