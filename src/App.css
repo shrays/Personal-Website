@@ -13,6 +13,8 @@
   --clr-primary: #2978b5;
   --clr-secondary: #3395e1;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --btn-bg: #f6f6f6;
+  --btn-shadow: #c6c6c6;
 }
 
 .dark {
@@ -24,6 +26,8 @@
   --clr-secondary: #fff769;
   --shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --btn-bg: #424462;
+  --btn-shadow: #292b3e;
 }
 
 main {
