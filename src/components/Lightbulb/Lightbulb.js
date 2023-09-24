@@ -11,8 +11,11 @@ const Lightbulb = () => {
   const [power, setPower] = useState('[ ]')
   const [isOn, setIsOn] = useState(false)
   const [color, setColor] = useState({ h: 0, s: 0, v: 100 })
+  const [loading, setLoading] = useState(false);
+
 
   async function statusCheck() {
+    setLoading(true);
     const response = await fetch('/.netlify/functions/status').then(
       (response) => response.json()
     )
@@ -32,6 +35,7 @@ const Lightbulb = () => {
       setStatus('Offline')
       setPower('Off')
     }
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -43,6 +47,7 @@ const Lightbulb = () => {
   }
 
   const handleSubmitClick = async () => {
+    setLoading(true);
     const payload = {
       duration: 0,
       fast: false,
@@ -70,6 +75,7 @@ const Lightbulb = () => {
       setStatus('Offline')
       setPower('Off')
     }
+    setLoading(false);
   }
 
   return (
@@ -87,7 +93,10 @@ const Lightbulb = () => {
           </div>
 
           <div className="lightbulb__block-button-stack">
-            <button className="controlButton refresh" onClick={statusCheck}>
+            <button
+              className={`controlButton refresh ${loading ? 'loading' : ''}`}
+              onClick={statusCheck}
+            >
               Refresh
             </button>
             <button
@@ -103,7 +112,7 @@ const Lightbulb = () => {
               Off
             </button>
             <button
-              className="controlButton submit"
+              className={`controlButton submit ${loading ? 'loading' : ''}`}
               onClick={handleSubmitClick}
             >
               Submit

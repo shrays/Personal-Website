@@ -26,12 +26,13 @@
 }
 .lightbulb__block-button-stack {
   flex-direction: column;
-  margin: auto 0; /* Vertical Center Buttons */
+  margin: auto 0;
   width: 300px;
 }
 
 .colorful {
   text-align: center;
+  padding-left: 2.5em;
 }
 
 .custom-layout .react-colorful {
@@ -123,6 +124,13 @@
   box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
 }
 
+.controlButton.refresh.loading {
+  top: 4px;
+  opacity: 0.5;
+  box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
+}
+
 .controlButton.submit {
   background: var(--clr-secondary);
   box-shadow: var(--clr-primary) 0px 7px 2px, #000 0px 8px 5px;
@@ -134,4 +142,11 @@
 .controlButton.submit:active {
   top: 4px;
   box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
+}
+
+.controlButton.submit.loading {
+  top: 4px;
+  opacity: 0.5;
+  box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
 }
