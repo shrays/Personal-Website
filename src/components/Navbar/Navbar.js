@@ -68,7 +68,8 @@ const Navbar = () => {
         ) : null} */}
       </ul>
 
-      <button style={{backgroundColor: 'inherit'}}
+      <button
+        style={{ backgroundColor: 'inherit' }}
         type="button"
         onClick={toggleTheme}
         className="btn btn--icon nav__theme"

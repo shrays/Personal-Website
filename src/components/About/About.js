@@ -20,19 +20,12 @@ const About = () => {
       )}
       {name && (
         <h1>
-            I{"'"}m <span className="about__name">{name}.</span>
+          I{"'"}m <span className="about__name">{name}.</span>
         </h1>
       )}
 
-      {role && (
-        <h2 className="about__role">
-          {role}
-        </h2>
-      )}
-      <p className="about__desc">
-        {' '}
-        {description}
-      </p>
+      {role && <h2 className="about__role">{role}</h2>}
+      <p className="about__desc"> {description}</p>
       <div className="about__contact">
         {social && (
           <>
