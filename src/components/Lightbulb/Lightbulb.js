@@ -96,6 +96,7 @@ const Lightbulb = () => {
             <button
               className={`controlButton refresh ${loading ? 'loading' : ''}`}
               onClick={statusCheck}
+              disabled={loading}
             >
               Refresh
             </button>
@@ -114,6 +115,7 @@ const Lightbulb = () => {
             <button
               className={`controlButton submit ${loading ? 'loading' : ''}`}
               onClick={handleSubmitClick}
+              disabled={loading}
             >
               Submit
             </button>
