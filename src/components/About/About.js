@@ -26,7 +26,7 @@ const About = () => {
 
       {role && <h2 className="about__role">{role}</h2>}
       <p className="about__desc"> {description}</p>
-      <div className="about__contact">
+      <div className="about__contact center">
         {social && (
           <>
             {social.github && (
