@@ -1,39 +1,23 @@
-.status-container {
-  text-align: center;
-  font-weight: bold;
-  padding: 0.25em;
-}
-
-.status-text {
-  color: var(--clr-fg-alt);
-}
-
 .lightbulb__block {
-  padding: 2em;
   margin: 0 auto;
   box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
+  /* transition: transform 0.2s linear; */
   border-radius: 1em;
   background-color: var(--clr-bg-alt);
   width: fit-content;
-}
+  padding: 2em; /* Potential problems with small mobiles */
+
+  }
 
 .lightbulb__block-stack {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
   text-align: center;
-}
-.lightbulb__block-button-stack {
-  flex-direction: column;
-  margin: auto 0;
-  width: 300px;
 }
 
 .colorful {
   text-align: center;
+  margin-right: 2em;
 }
-
 .custom-layout .react-colorful {
   width: 300px;
   height: 280px;
@@ -72,26 +56,23 @@
   opacity: 0.8;
   letter-spacing: 1px;
   box-shadow: var(--btn-shadow) 0px 7px 2px, #000 0px 8px 5px;
-  margin: 0.5em;
 }
-
 .controlButton:not(.active):hover {
   opacity: 1;
 }
-
 .controlButton:active {
   top: 4px;
   box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
 }
 
 .controlButton.onButton {
-  width: 30%;
+  width: 80px;
+  margin: 1em 1em 0 0;
 }
 .controlButton.onButton:active {
   top: 4px;
   box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
 }
-
 .controlButton.onButton.active {
   top: 4px;
   box-shadow: #489552 0px 3px 2px, #000 0px 3px 5px;
@@ -100,14 +81,12 @@
 }
 
 .controlButton.offButton {
-  width: 30%;
+  width: 80px;
 }
-
 .controlButton.offButton:active {
   top: 4px;
   box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
 }
-
 .controlButton.offButton.active {
   top: 4px;
   box-shadow: #b14141 0px 3px 2px, #000 0px 3px 5px;
@@ -116,13 +95,12 @@
 }
 
 .controlButton.refresh {
-  width: 66%;
+  width: 180px;
 }
 .controlButton.refresh:active {
   top: 4px;
   box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
 }
-
 .controlButton.refresh.loading {
   top: 4px;
   opacity: 0.5;
@@ -134,18 +112,56 @@
   background: var(--clr-secondary);
   box-shadow: var(--clr-primary) 0px 7px 2px, #000 0px 8px 5px;
   color: var(--clr-bg);
-  width: 66%;
+  width: 180px;
   margin-top: 2em;
-}
 
+  margin-bottom: 2em; /* Remove after centering button stack */
+}
 .controlButton.submit:active {
   top: 4px;
   box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
 }
-
 .controlButton.submit.loading {
   top: 4px;
   opacity: 0.5;
   box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
   cursor: default;
+}
+
+.status-container {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.7em;
+}
+.status-text {
+  color: var(--clr-fg-alt);
+}
+
+@media (min-width: 607px) { /* Necessary for joint collapse/margin */
+  .lightbulb__block-stack {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 606px) {  /* Necessary for joint collapse/margin */
+  .colorful {
+    margin-right: 0;
+    padding-bottom: 2em;
+  }
+  .controlButton.submit { /* Remove after centering button stack */
+    margin-bottom: 0em;
+  }
+}
+
+@media (max-width: 600px) {
+  .custom-layout .react-colorful {
+    width: 80vw;
+    max-width: 300px;
+    min-width: 200px;
+  }
+  .lightbulb__block-button-stack {
+    width: 80vw;
+    max-width: 300px;
+    min-width: 200px;
+  }
 }

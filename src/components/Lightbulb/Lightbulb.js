@@ -11,11 +11,10 @@ const Lightbulb = () => {
   const [power, setPower] = useState('[ ]')
   const [isOn, setIsOn] = useState(false)
   const [color, setColor] = useState({ h: 0, s: 0, v: 100 })
-  const [loading, setLoading] = useState(false);
-
+  const [loading, setLoading] = useState(false)
 
   async function statusCheck() {
-    setLoading(true);
+    setLoading(true)
     const response = await fetch('/.netlify/functions/status').then(
       (response) => response.json()
     )
@@ -35,7 +34,7 @@ const Lightbulb = () => {
       setStatus('Offline')
       setPower('Off')
     }
-    setLoading(false);
+    setLoading(false)
   }
 
   useEffect(() => {
@@ -47,7 +46,7 @@ const Lightbulb = () => {
   }
 
   const handleSubmitClick = async () => {
-    setLoading(true);
+    setLoading(true)
     const payload = {
       duration: 0,
       fast: false,
@@ -75,7 +74,7 @@ const Lightbulb = () => {
       setStatus('Offline')
       setPower('Off')
     }
-    setLoading(false);
+    setLoading(false)
   }
 
   return (
@@ -91,15 +90,16 @@ const Lightbulb = () => {
               </div>
             </div>
           </div>
-
-          <div className="lightbulb__block-button-stack">
-            <button
-              className={`controlButton refresh ${loading ? 'loading' : ''}`}
-              onClick={statusCheck}
-              disabled={loading}
-            >
-              Refresh
-            </button>
+        </div>
+        <div className="lightbulb__block-stack">
+          <button
+            className={`controlButton refresh ${loading ? 'loading' : ''}`}
+            onClick={statusCheck}
+            disabled={loading}
+          >
+            Refresh
+          </button>
+          <div class="mid-buttons">
             <button
               className={`controlButton onButton ${isOn ? 'active' : ''}`}
               onClick={() => handleToggleClick(true)}
@@ -112,34 +112,34 @@ const Lightbulb = () => {
             >
               Off
             </button>
-            <button
-              className={`controlButton submit ${loading ? 'loading' : ''}`}
-              onClick={handleSubmitClick}
-              disabled={loading}
-            >
-              Submit
-            </button>
+          </div>
+          <button
+            className={`controlButton submit ${loading ? 'loading' : ''}`}
+            onClick={handleSubmitClick}
+            disabled={loading}
+          >
+            Submit
+          </button>
 
-            <div className="status-container">
-              <StatusIndicator status={status === 'Online'} />
-              <span
-                className={status === 'Awaiting' ? 'status-text' : ''}
-                style={{
-                  color:
-                    status === 'Online'
-                      ? 'green'
-                      : status === 'Offline'
-                      ? 'red'
-                      : undefined,
-                }}
-              >
-                {status}
-              </span>
-              <span>
-                &nbsp; - &nbsp;
-                {power}
-              </span>
-            </div>
+          <div className="status-container">
+            <StatusIndicator status={status === 'Online'} />
+            <span
+              className={status === 'Awaiting' ? 'status-text' : ''}
+              style={{
+                color:
+                  status === 'Online'
+                    ? 'green'
+                    : status === 'Offline'
+                    ? 'red'
+                    : undefined,
+              }}
+            >
+              {status}
+            </span>
+            <span>
+              &nbsp; - &nbsp;
+              {power}
+            </span>
           </div>
         </div>
       </div>
