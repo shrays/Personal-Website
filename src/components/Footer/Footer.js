@@ -1,5 +1,5 @@
 import './Footer.css'
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 
 const Footer = () => (
   <footer className="footer">
