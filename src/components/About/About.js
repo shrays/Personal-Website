@@ -20,22 +20,13 @@ const About = () => {
       )}
       {name && (
         <h1>
-          <center>
-            I{"'"}m <span className="about__name">{name}.</span>
-          </center>
+          I{"'"}m <span className="about__name">{name}.</span>
         </h1>
       )}
 
-      {role && (
-        <h2 className="about__role">
-          <center>{role}</center>
-        </h2>
-      )}
-      <p className="about__desc">
-        {' '}
-        <center>{description}</center>
-      </p>
-      <div className="about__contact center">
+      {role && <h2 className="about__role">{role}</h2>}
+      <p className="about__desc"> {description}</p>
+      <div className="about__contact">
         {social && (
           <>
             {social.github && (
