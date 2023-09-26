@@ -130,6 +130,12 @@
   box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
   cursor: default;
 }
+.controlButton.submit.offline {
+  top: 4px;
+  opacity: 0.5;
+  box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
+}
 
 .status-container {
   text-align: center;

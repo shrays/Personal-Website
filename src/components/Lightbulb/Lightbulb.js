@@ -19,8 +19,8 @@ const Lightbulb = () => {
       (response) => response.json()
     )
     // console.log(JSON.stringify(response))
-
-    if (response[0].connected == true) {
+    
+    if (response[0] && response[0].connected == true) {
       setStatus('Online')
       const power = response[0].power
       setPower(power.charAt(0).toUpperCase() + power.slice(1))
@@ -65,9 +65,8 @@ const Lightbulb = () => {
     }).then((response) => response.json())
 
     // console.log(JSON.stringify(response))
-
-    const resultStatus = response.results[0].status
-    if (resultStatus === 'ok') {
+    
+    if (response.results && response.results[0].status === 'ok') {
       setStatus('Online')
       setPower(payload.power.charAt(0).toUpperCase() + payload.power.slice(1))
     } else {
@@ -99,7 +98,7 @@ const Lightbulb = () => {
           >
             Refresh
           </button>
-          <div class="mid-buttons">
+          <div className="mid-buttons">
             <button
               className={`controlButton onButton ${isOn ? 'active' : ''}`}
               onClick={() => handleToggleClick(true)}
@@ -114,7 +113,7 @@ const Lightbulb = () => {
             </button>
           </div>
           <button
-            className={`controlButton submit ${loading ? 'loading' : ''}`}
+            className={`controlButton submit ${loading ? 'loading' : ''} ${(status=='Offline') ? 'offline' : ''}`}
             onClick={handleSubmitClick}
             disabled={loading}
           >
