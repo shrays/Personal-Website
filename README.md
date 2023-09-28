@@ -4,7 +4,6 @@ This is the code for my personal website and portfolio. It is a React project bo
 
 <img width="1196" alt="PageDemo" src="https://user-images.githubusercontent.com/14226108/233829723-ce345262-335a-4dcb-952f-097715b6b077.png">
 
-
 ## Getting Started
 
 Development for the website requires [Node v18](https://nodejs.org/download/release/latest-v18.x/) as well as `npm`, the Node Package Manager. Please ensure you install these prerequisites before continuing.
@@ -44,7 +43,7 @@ Once you're ready to make a production-ready build, you can make use of `react-s
 npm run build
 ```
 
-This will output the static website to the `build` folder where you can use a tool like `http-server` to host from the folder. You can also integrate this into your deployment setup of your choice, like Apache or Nginx. For this project, we make use of GitHub Pages using the `gh-pages` CLI tool which can be run using `npm run deploy` (remember to do this *after* running `npm run build`).
+This will output the static website to the `build` folder where you can use a tool like `http-server` to host from the folder. You can also integrate this into your deployment setup of your choice, like Apache or Nginx. For this project, we make use of GitHub Pages using the `gh-pages` CLI tool which can be run using `npm run deploy` (remember to do this _after_ running `npm run build`).
 
 ## Contribute
 

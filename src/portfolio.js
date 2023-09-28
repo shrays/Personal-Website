@@ -10,9 +10,9 @@ const about = {
   photo: aboutpic,
   // all the properties are optional - can be left empty or deleted
   name: 'Shray Swarup',
-  role: 'A Computer and Data Science Student',
+  role: 'A Software and ML Engineering Student',
   description:
-    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Incoming intern at Deloitte Consulting.',
+    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Previous intern at Deloitte Consulting.',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
@@ -76,7 +76,7 @@ const skills = [
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'svswarup@asu.edu',
+  email: 'shrayswarup@gmail.com',
 }
 
 export { header, about, projects, lightbulb, skills, contact }
