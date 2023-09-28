@@ -1,22 +1,176 @@
-.lightbulb__list {
-  max-width: 450px;
-  width: 95%;
+.lightbulb__block {
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  box-shadow: var(--shadow);
+  /* transition: transform 0.2s linear; */
+  border-radius: 1em;
+  background-color: var(--clr-bg-alt);
+  width: fit-content;
+  padding: 2em; /* Potential problems with small mobiles */
+
+  }
+
+.lightbulb__block-stack {
+  display: block;
+  text-align: center;
 }
 
-.lightbulb__list-item {
-  margin: 0.5em;
-  border-radius: 0.5em;
+.colorful {
+  text-align: center;
+  margin-right: 2em;
+}
+.custom-layout .react-colorful {
+  width: 300px;
+  height: 280px;
+}
+.custom-layout .react-colorful__saturation {
+  margin: 15px 0 0 0;
+  border-radius: 5px;
+  border-bottom: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.custom-layout .react-colorful__hue {
+  order: -1;
+}
+.custom-layout .react-colorful__hue {
+  height: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.custom-layout .react-colorful__hue-pointer {
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: #ffffff;
+}
+.custom-text {
+  padding-top: 0.25em;
+}
+
+.controlButton {
+  position: relative;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--clr-fg-alt);
+  padding: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: var(--btn-shadow) 0px 7px 2px, #000 0px 8px 5px;
+}
+.controlButton:not(.active):hover {
+  opacity: 1;
+}
+.controlButton:active {
+  top: 4px;
+  box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
+}
+
+.controlButton.onButton {
+  width: 80px;
+  margin: 1em 1em 0 0;
+}
+.controlButton.onButton:active {
+  top: 4px;
+  box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
+}
+.controlButton.onButton.active {
+  top: 4px;
+  box-shadow: #489552 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
+  background: #60c86e;
+}
+
+.controlButton.offButton {
+  width: 80px;
+}
+.controlButton.offButton:active {
+  top: 4px;
+  box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
+}
+.controlButton.offButton.active {
+  top: 4px;
+  box-shadow: #b14141 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
+  background: #ff5d5d;
+}
+
+.controlButton.refresh {
+  width: 180px;
+}
+.controlButton.refresh:active {
+  top: 4px;
+  box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
+}
+.controlButton.refresh.loading {
+  top: 4px;
+  opacity: 0.5;
+  box-shadow: var(--btn-shadow) 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
+}
+
+.controlButton.submit {
+  background: var(--clr-secondary);
+  box-shadow: var(--clr-primary) 0px 7px 2px, #000 0px 8px 5px;
+  color: var(--clr-bg);
+  width: 180px;
+  margin-top: 2em;
+
+  margin-bottom: 2em; /* Remove after centering button stack */
+}
+.controlButton.submit:active {
+  top: 4px;
+  box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
+}
+.controlButton.submit.loading {
+  top: 4px;
+  opacity: 0.5;
+  box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
+}
+.controlButton.submit.offline {
+  top: 4px;
+  opacity: 0.5;
+  box-shadow: var(--clr-primary) 0px 3px 2px, #000 0px 3px 5px;
+  cursor: default;
 }
 
 .status-container {
   text-align: center;
   font-weight: bold;
+  margin-top: 0.7em;
 }
-
 .status-text {
   color: var(--clr-fg-alt);
+}
+
+@media (min-width: 607px) { /* Necessary for joint collapse/margin */
+  .lightbulb__block-stack {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 606px) {  /* Necessary for joint collapse/margin */
+  .colorful {
+    margin-right: 0;
+    padding-bottom: 2em;
+  }
+  .controlButton.submit { /* Remove after centering button stack */
+    margin-bottom: 0em;
+  }
+}
+
+@media (max-width: 600px) {
+  .custom-layout .react-colorful {
+    width: 80vw;
+    max-width: 300px;
+    min-width: 200px;
+  }
+  .lightbulb__block-button-stack {
+    width: 80vw;
+    max-width: 300px;
+    min-width: 200px;
+  }
 }

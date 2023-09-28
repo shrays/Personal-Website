@@ -30,7 +30,7 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
-        
+
         {lightbulb.enabled ? (
           <li className="nav__list-item">
             <a
@@ -69,6 +69,7 @@ const Navbar = () => {
       </ul>
 
       <button
+        style={{ backgroundColor: 'inherit' }}
         type="button"
         onClick={toggleTheme}
         className="btn btn--icon nav__theme"
