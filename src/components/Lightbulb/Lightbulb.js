@@ -83,7 +83,7 @@ const Lightbulb = () => {
         <div className="lightbulb__block-stack">
           <div className="colorful">
             <div className="custom-layout">
-              <HsvColorPicker color={color} onChange={setColor} />
+              <HsvColorPicker className="colorpicker" color={color} onChange={setColor} />
               <div className="custom-text">
                 Brightness: {`${color.v.toFixed(0)}%`}
               </div>
