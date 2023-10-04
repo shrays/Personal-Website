@@ -79,18 +79,24 @@ const Lightbulb = () => {
   return (
     <section className="section lightbulb" id="lightbulb">
       <h2 className="section__title">Control my Lamp</h2>
+        {/* <span className='testText'>
+          <center>The control panel below can change<br/>gfmhgfhg</center>
+        </span> */}
       <div className="lightbulb__block">
         <div className="lightbulb__block-stack">
           <div className="colorful">
             <div className="custom-layout">
               <HsvColorPicker className="colorpicker" color={color} onChange={setColor} />
-              <div className="custom-text">
-                Brightness: {`${color.v.toFixed(0)}%`}
+              <div className="brightness-text">
+                Brightness: <b>{`${color.v.toFixed(0)}%`}</b>
               </div>
             </div>
           </div>
         </div>
         <div className="lightbulb__block-stack">
+          <div>
+            <span className="stack-desc">Don't wake me up.<br/>Or do. Your choice!<br/></span> 
+          </div>
           <button
             className={`controlButton refresh ${loading ? 'loading' : ''}`}
             onClick={statusCheck}

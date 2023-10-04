@@ -1,12 +1,11 @@
 .lightbulb__block {
   margin: 0 auto;
   box-shadow: var(--shadow);
-  /* transition: transform 0.2s linear; */
   border-radius: 1em;
   background-color: var(--clr-bg-alt);
   width: fit-content;
-  padding: 2em; /* Potential problems with small mobiles */
-
+  padding: 2em 2em 1em 2em; /* Potential problems with small mobiles */
+  /* transform: scale(1.1);  */
   }
 
 .lightbulb__block-stack {
@@ -45,8 +44,15 @@
   border-style: solid;
   border-color: #ffffff;
 }
-.custom-text {
-  padding-top: 0.25em;
+.brightness-text {
+  padding-top: 1em;
+}
+
+.stack-desc {
+  display: block;
+  margin-bottom: 1em;
+  /* background-color: #f7f7f7; */
+  /* border-radius: 0.5em; */
 }
 
 .controlButton {
@@ -121,7 +127,7 @@
   width: 180px;
   margin-top: 2em;
 
-  margin-bottom: 2em; /* Remove after centering button stack */
+  margin-bottom: 2.1em; /* Remove after centering button stack */
 }
 .controlButton.submit:active {
   top: 4px;
@@ -143,7 +149,6 @@
 .status-container {
   text-align: center;
   font-weight: bold;
-  margin-top: 0.7em;
 }
 .status-text {
   color: var(--clr-fg-alt);
