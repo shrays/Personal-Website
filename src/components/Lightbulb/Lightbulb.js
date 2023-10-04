@@ -79,9 +79,6 @@ const Lightbulb = () => {
   return (
     <section className="section lightbulb" id="lightbulb">
       <h2 className="section__title">Control my Lamp</h2>
-        {/* <span className='testText'>
-          <center>The control panel below can change<br/>gfmhgfhg</center>
-        </span> */}
       <div className="lightbulb__block">
         <div className="lightbulb__block-stack">
           <div className="colorful">

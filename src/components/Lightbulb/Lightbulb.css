@@ -51,8 +51,6 @@
 .stack-desc {
   display: block;
   margin-bottom: 1em;
-  /* background-color: #f7f7f7; */
-  /* border-radius: 0.5em; */
 }
 
 .controlButton {
@@ -154,19 +152,22 @@
   color: var(--clr-fg-alt);
 }
 
-@media (min-width: 607px) { /* Necessary for joint collapse/margin */
+@media (min-width: 622px) { /* Necessary for joint collapse/margin */
   .lightbulb__block-stack {
     display: inline-block;
   }
 }
 
-@media (max-width: 606px) {  /* Necessary for joint collapse/margin */
+@media (max-width: 621px) {  /* Necessary for joint collapse/margin */
   .colorful {
     margin-right: 0;
     padding-bottom: 2em;
   }
+  .stack-desc {
+    display: none;
+  }
   .controlButton.submit { /* Remove after centering button stack */
-    margin-bottom: 0em;
+    margin-bottom: 1em;
   }
 }
 
