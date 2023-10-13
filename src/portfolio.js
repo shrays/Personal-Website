@@ -10,9 +10,10 @@ const about = {
   photo: aboutpic,
   // all the properties are optional - can be left empty or deleted
   name: 'Shray Swarup',
-  role: 'A Software and ML Engineering Student',
+  role: 'Software Engineer, CS Student',
+  // role: 'A Software and ML Engineering Student',
   description:
-    'Computer Science Major and Business Minor at Barrett, Arizona State University. Experience in software development, predictive modeling, and data handling tools. Previous intern at Deloitte Consulting.',
+    'Senior Computer Science Major and Business Minor at Barrett, ASU. Experience in full stack development, predictive modeling, and data handling. Former intern at Deloitte Consulting.',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
@@ -31,7 +32,7 @@ const projects = [
     livePreview: 'https://shrayswarup.com',
   },
   {
-    name: 'Crop Yield Prediction Research Paper',
+    name: 'Research Paper: Crop Yield Prediction',
     description:
       'Prediction models using current USDA crop information, NOAA climate, CMIP6 climate, and GAEZv4 soil data. Visualize future projected yield data based on different climate emission scenarios using ML techniques.',
     stack: ['Python', 'PyTorch', 'sklearn', 'SQL', 'Supabase', 'NASS API'],
@@ -43,6 +44,12 @@ const projects = [
     description:
       'Worked with SVB AI Lab to implement and assess fraud detection models against adversarial attacks and biasing. Researched novel ML and data anomaly detection alongside team',
     stack: ['JavaScript', 'HTML', 'CSS', 'React', 'NPM', 'Node.js', 'Dash', 'PostgreSQL', 'PyTorch', 'SkLearn'],
+  },
+  {
+    name: 'Lobster Lines Website',
+    description:
+      '(WIP) A website designed to gather statistics/visualize store-specific differences in chain restaurant wait times. Data gathered from restaurant website API requests.',
+    stack: ['TypeScript', 'React', 'Next.js', 'Redux', 'Node.js', 'FastAPI', 'MapLibre GL JS'],
   },
   {
     name: 'Hackathon Accesibility Chrome Extension',
@@ -59,13 +66,6 @@ const projects = [
     stack: ['Java', 'JavaFX', 'Launch4j', 'MacJavaPackager'],
     sourceCode: 'https://github.com/shrays/TicTacTen',
     livePreview: 'https://github.com/shrays/TicTacTen/releases/tag/1.1',
-  },
-  {
-    name: 'University Rankings Visualizer',
-    description:
-      'A website designed to visualize and compare world univeristy rankings through a cleaned and structured dataset.',
-    stack: ['react', 'npm', 'node.js', 'plotly.js', 'PostgreSQL'],
-    sourceCode: 'https://github.com/shrays/University-Rankings',
   },
 ]
 const lightbulb = {
