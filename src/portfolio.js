@@ -27,16 +27,15 @@ const projects = [
     name: 'This Website',
     description:
       'Resume-style website deployed with Netlify. Implemented backend serverless functions and UI components to enable lightbulb hardware control over HTTP',
-    stack: ['JavaScript', 'React', 'Node.js', 'npm', 'HTML', 'CSS', 'Netlify', 'LIFX API'],
+    stack: ['JavaScript', 'React', 'Node.js', 'npm', 'HTML', 'CSS', 'LIFX API'],
     sourceCode: 'https://github.com/shrays/Personal-Website',
     livePreview: 'https://shrayswarup.com',
   },
   {
-    name: 'Research Paper: Crop Yield Prediction',
+    name: 'Thesis Paper: Crop Yield Prediction',
     description:
       'Prediction models using current USDA crop information, NOAA climate, CMIP6 climate, and GAEZv4 soil data. Visualize future projected yield data based on different climate emission scenarios using ML techniques.',
     stack: ['Python', 'PyTorch', 'sklearn', 'SQL', 'Supabase', 'NASS API'],
-    sourceCode: 'https://github.com/shrays/Yield-Prediction',
     livePreview: 'https://drive.google.com/file/d/1-K9PkMMuyQ-jjB3fdcQuV_MADTxVmdDY/view',
   },
   {
