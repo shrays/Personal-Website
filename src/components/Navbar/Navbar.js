@@ -34,7 +34,7 @@ const Navbar = () => {
         {lightbulb.enabled ? (
           <li className="nav__list-item">
             <a
-              href="#skills"
+              href="#lightbulb"
               onClick={toggleNavList}
               className="link link--nav"
             >
