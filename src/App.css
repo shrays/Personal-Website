@@ -6,7 +6,7 @@
 }
 
 .light {
-  --clr-bg: #f6f6f6;
+  --clr-bg: #ffffff;
   --clr-bg-alt: #ffffff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
@@ -42,7 +42,7 @@
   /* --clr-primary: #4fbf5e;
   --clr-secondary: #82dd95; */
   /* PURPLE */
-  --clr-primary: #a76a82;
+  --clr-primary: #8a566b;
   --clr-secondary: #d489a7;
   --shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
