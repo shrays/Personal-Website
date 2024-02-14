@@ -2,7 +2,7 @@
 
 This is the code for my personal website and portfolio. It is a React project bootstrapped using `create-react-app` and deployed using Netlify.
 
-<img width="1196" alt="PageDemo" src="https://user-images.githubusercontent.com/14226108/233829723-ce345262-335a-4dcb-952f-097715b6b077.png">
+<img width="1399" alt="SitePreview" src="https://github.com/shrays/Personal-Website/assets/14226108/f9179cf6-fa29-4eba-88ad-467ceafb87eb">
 
 ## Getting Started
 
