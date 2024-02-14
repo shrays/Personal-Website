@@ -10,10 +10,9 @@ const about = {
   photo: aboutpic,
   // all the properties are optional - can be left empty or deleted
   name: 'Shray Swarup',
-  role: 'Software Engineer, CS Student',
-  // role: 'A Software and ML Engineering Student',
+  role: 'Software Developer, Web/Data/ML',
   description:
-    'Senior Computer Science Major and Business Minor at Barrett, ASU. Experience in full stack development, predictive modeling, and data handling. Former intern at Deloitte Consulting.',
+    'Computer Science Grad with experience working with and leading software development teams in full-stack projects involving prediction modeling, model bias detection, and more! Former intern at Deloitte Consulting.',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
@@ -24,12 +23,12 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'This Website',
+    name: 'Lobster Lines',
     description:
-      'Resume-style website deployed with Netlify. Implemented backend serverless functions and UI components to enable lightbulb hardware control over HTTP',
-    stack: ['JavaScript', 'React', 'Node.js', 'npm', 'HTML', 'CSS', 'LIFX API'],
-    sourceCode: 'https://github.com/shrays/Personal-Website',
-    livePreview: 'https://shrayswarup.com',
+      'Website designed to gather statistics/visualize store-specific differences in chain restaurant wait times. Data gathered from restaurant website API requests.',
+    stack: ['TypeScript', 'React', 'Next.js', 'Redux', 'Node.js', 'FastAPI', 'MapLibre GL JS'],
+    sourceCode: 'https://github.com/shrays/lobster-lines',
+    livePreview: 'https://www.lobsterlines.com/',
   },
   {
     name: 'Thesis Paper: Crop Yield Prediction',
@@ -45,10 +44,12 @@ const projects = [
     stack: ['JavaScript', 'HTML', 'CSS', 'React', 'NPM', 'Node.js', 'Dash', 'PostgreSQL', 'PyTorch', 'SkLearn'],
   },
   {
-    name: 'Lobster Lines Website',
+    name: 'This Website',
     description:
-      '(WIP) A website designed to gather statistics/visualize store-specific differences in chain restaurant wait times. Data gathered from restaurant website API requests.',
-    stack: ['TypeScript', 'React', 'Next.js', 'Redux', 'Node.js', 'FastAPI', 'MapLibre GL JS'],
+      'Resume-style website deployed with Netlify. Implemented backend serverless functions and UI components to enable lightbulb hardware control over HTTP',
+    stack: ['JavaScript', 'React', 'Node.js', 'npm', 'HTML', 'CSS', 'LIFX API'],
+    sourceCode: 'https://github.com/shrays/Personal-Website',
+    livePreview: 'https://shrayswarup.com',
   },
   {
     name: 'Hackathon Accesibility Chrome Extension',
@@ -68,30 +69,27 @@ const projects = [
   },
 ]
 const lightbulb = {
-  // email is optional - if left empty Contact section won't show up
   enabled: true,
 }
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'Python',
-  'C++',
-  'Java',
-  'R',
-  'JavaScript',
-  'CSS',
-  'HTML',
-  'Git',
-  'TensorFlow',
-  'Sklearn',
-  'PostgreSQL',
-  'React',
-  'AWS',
-  'Supabase',
-  'Tableau',
-  'Adobe Photoshop',
-  'Jira',
-  'Confluence',
+  // 'Python',
+  // 'C++',
+  // 'Java',
+  // 'R',
+  // 'JavaScript',
+  // 'CSS',
+  // 'HTML',
+  // 'Git',
+  // 'TensorFlow',
+  // 'Sklearn',
+  // 'PostgreSQL',
+  // 'React',
+  // 'AWS',
+  // 'Supabase',
+  // 'Tableau',
+  // 'Adobe Photoshop',
+  // 'Jira',
+  // 'Confluence',
 ]
 
 const contact = {

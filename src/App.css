@@ -10,8 +10,18 @@
   --clr-bg-alt: #ffffff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
-  --clr-secondary: #3395e1;
+  /* BLUE */
+  /* --clr-primary: #2978b5;
+  --clr-secondary: #3395e1; */
+  /* BROWN */
+  /* --clr-primary: #462717;
+  --clr-secondary: rgb(141, 97, 65); */
+  /* GREEN */
+  --clr-primary: #31783b;
+  --clr-secondary: #65ad74;
+  /* PURPLE */
+  /* --clr-primary: #4e303c;
+  --clr-secondary: #9e657c; */
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --btn-bg: #f6f6f6;
   --btn-shadow: #c6c6c6;
@@ -22,8 +32,18 @@
   --clr-bg-alt: #28293c;
   --clr-fg: #e3e3e3;
   --clr-fg-alt: #ffffff;
-  --clr-primary: #efc631;
-  --clr-secondary: #fff769;
+  /* YELLOW */
+  /* --clr-primary: #efc631;
+  --clr-secondary: #fff769; */
+  /* BROWN */
+  /* --clr-primary: #a4603e;
+  --clr-secondary: rgb(205, 142, 98); */
+  /* GREEN */
+  /* --clr-primary: #4fbf5e;
+  --clr-secondary: #82dd95; */
+  /* PURPLE */
+  --clr-primary: #a76a82;
+  --clr-secondary: #d489a7;
   --shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   --btn-bg: #424462;
