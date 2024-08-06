@@ -116,9 +116,9 @@ const Lightbulb = () => {
             </button>
           </div>
           <button
-            className={`controlButton submit ${loading ? 'loading' : ''} ${(status=='Offline') ? 'offline' : ''}`}
+            className={`controlButton submit ${loading ? 'loading' : ''} ${(status=='Offline') ? 'loading' : ''}`}
             onClick={handleSubmitClick}
-            disabled={loading}
+            disabled={loading || status === 'Offline'}
           >
             Submit
           </button>
