@@ -12,6 +12,7 @@ const Lightbulb = () => {
   const [isOn, setIsOn] = useState(false)
   const [color, setColor] = useState({ h: 0, s: 0, v: 100 })
   const [loading, setLoading] = useState(false)
+  const [changed, setChanged] = useState(false)
 
   async function statusCheck() {
     setLoading(true)
@@ -35,18 +36,26 @@ const Lightbulb = () => {
       setPower('Off')
     }
     setLoading(false)
+    setChanged(false)
   }
 
   useEffect(() => {
     statusCheck()
   }, [])
 
+  const handleColorChange = (value) => {
+    setColor(value)
+    setChanged(true)
+  }
+
   const handleToggleClick = (value) => {
     setIsOn(value)
+    setChanged(true)
   }
 
   const handleSubmitClick = async () => {
     setLoading(true)
+    setChanged(false)
     const payload = {
       duration: 0,
       fast: false,
@@ -83,7 +92,7 @@ const Lightbulb = () => {
         <div className="lightbulb__block-stack">
           <div className="colorful">
             <div className="custom-layout">
-              <HsvColorPicker className="colorpicker" color={color} onChange={setColor} />
+              <HsvColorPicker className="colorpicker" color={color} onChange={handleColorChange} />
               <div className="brightness-text">
                 Brightness: <b>{`${color.v.toFixed(0)}%`}</b>
               </div>
@@ -116,9 +125,9 @@ const Lightbulb = () => {
             </button>
           </div>
           <button
-            className={`controlButton submit ${loading ? 'loading' : ''} ${(status=='Offline') ? 'loading' : ''}`}
+            className={`controlButton submit ${(loading || status === 'Offline' || !changed) ? 'loading' : ''}`}
             onClick={handleSubmitClick}
-            disabled={loading || status === 'Offline'}
+            disabled={loading || status === 'Offline' || !changed}
           >
             Submit
           </button>
