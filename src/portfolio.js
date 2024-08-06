@@ -1,18 +1,17 @@
 import aboutpic from './components/Access/profile.webp'
+  // properties are optional - empty fields don't show up
 
 const header = {
-  // all the properties are optional - can be left empty or deleted
   homepage: 'https://shrayswarup.com',
   title: 'SS.',
 }
 
 const about = {
   photo: aboutpic,
-  // all the properties are optional - can be left empty or deleted
   name: 'Shray Swarup',
-  role: 'Software Developer, Web/Data/ML',
+  role: 'Software Developer, Web/Cloud/Data',
   description:
-    'Computer Science Grad with experience working with and leading software development teams in full-stack projects involving prediction modeling, model bias detection, and more! Former intern at Deloitte Consulting.',
+    'Full-Stack Software Developer with experience working on projects in scalable web development with real-time capabilities, cloud architecture, and predictive modeling using agile methodologies alongside development teams!',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
@@ -20,12 +19,22 @@ const about = {
 }
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
+  {
+    name: 'Slanted',
+    description:
+      'Designing and launching an unreleased monetizable web application featuring detailed user progress tracking, private lobbies, and an intelligently curated database alongside small developer team.',
+    stack: ['TypeScript', 'React', 'Next.js', 'AWS', 'Node.js', 'CloudFormation', 'Docker', 'JIRA'],
+  },
+  {
+    name: 'Deloitte Consulting',
+    description:
+      'Developed internal web tools and python/shell automations for client project. Removed technical debt in data pipelines via NoSQL for data-center team as an Intern.',
+    stack: ['JavaScript', 'JQuery', 'MongoDB', 'Python', 'Bash', 'Automation', 'DevOps'],
+  },
   {
     name: 'Lobster Lines',
     description:
-      'Website designed to gather statistics/visualize store-specific differences in chain restaurant wait times. Data gathered from restaurant website API requests.',
+      'Displayed nation-wide Red Lobster data via third party API requests and dynamic mapping. Features statistics to visualize store-specific differences in chain restaurant data, scalable components to apply to other sources, and a development blog.',
     stack: ['TypeScript', 'React', 'Next.js', 'Redux', 'Node.js', 'FastAPI', 'MapLibre GL JS'],
     sourceCode: 'https://github.com/shrays/lobster-lines',
     livePreview: 'https://www.lobsterlines.com/',
@@ -40,33 +49,33 @@ const projects = [
   {
     name: 'Silicon Valley Bank: ML/AI Bias Research',
     description:
-      'Worked with SVB AI Lab to implement and assess fraud detection models against adversarial attacks and biasing. Researched novel ML and data anomaly detection alongside team',
+      'Researched implementing and assessing fraud detection models against adversarial attacks and biasing  alongside research team with assistance from the SVB AI Lab. Used novel ML and data anomaly detection practices.',
     stack: ['JavaScript', 'HTML', 'CSS', 'React', 'NPM', 'Node.js', 'Dash', 'PostgreSQL', 'PyTorch', 'SkLearn'],
   },
   {
     name: 'This Website',
     description:
-      'Resume-style website deployed with Netlify. Implemented backend serverless functions and UI components to enable lightbulb hardware control over HTTP',
-    stack: ['JavaScript', 'React', 'Node.js', 'npm', 'HTML', 'CSS', 'LIFX API'],
+      'Resume-style website implementing backend serverless functions and UI components to enable lightbulb hardware control over HTTP. Deployed with Netlify.',
+    stack: ['JavaScript', 'React', 'Node.js', 'HTML5', 'CSS3', 'LIFX API'],
     sourceCode: 'https://github.com/shrays/Personal-Website',
     livePreview: 'https://shrayswarup.com',
   },
-  {
-    name: 'Hackathon Accesibility Chrome Extension',
-    description:
-      'Gives any chrome text box speech-to-text capabilities. Developed with a team to win multiple categories at sunhacks 2021 hackathon.',
-    stack: ['HTML', 'CSS', 'JavaScript', 'AssemblyAI API', 'jQuery', 'RecordRTC'],
-    sourceCode: 'https://github.com/shrays/sunhacks2021',
-    livePreview: 'https://devpost.com/software/speech-box',
-  },
-  {
-    name: 'TicTacTen Desktop App',
-    description:
-      'Also known as Ultimate TicTacToe. A packaged Windows and macOS compatible desktop app built via JavaFX.',
-    stack: ['Java', 'JavaFX', 'Launch4j', 'MacJavaPackager'],
-    sourceCode: 'https://github.com/shrays/TicTacTen',
-    livePreview: 'https://github.com/shrays/TicTacTen/releases/tag/1.1',
-  },
+  // {
+  //   name: 'Accesibility Chrome Extension',
+  //   description:
+  //     'Gives any chrome text box speech-to-text capabilities. Developed with a team to win multiple categories at sunhacks 2021 hackathon.',
+  //   stack: ['HTML', 'CSS', 'JavaScript', 'AssemblyAI API', 'jQuery', 'RecordRTC'],
+  //   sourceCode: 'https://github.com/shrays/sunhacks2021',
+  //   livePreview: 'https://devpost.com/software/speech-box',
+  // },
+  // {
+  //   name: 'TicTacTen Desktop App',
+  //   description:
+  //     'Also known as Ultimate TicTacToe. A packaged Windows and macOS compatible desktop app built via JavaFX.',
+  //   stack: ['Java', 'JavaFX', 'Launch4j', 'MacJavaPackager'],
+  //   sourceCode: 'https://github.com/shrays/TicTacTen',
+  //   livePreview: 'https://github.com/shrays/TicTacTen/releases/tag/1.1',
+  // },
 ]
 const lightbulb = {
   enabled: true,
@@ -93,7 +102,6 @@ const skills = [
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'shrayswarup@gmail.com',
 }
 
