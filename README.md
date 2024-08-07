@@ -1,4 +1,6 @@
-# Personal Website
+# Personal Website [![Netlify Status](https://api.netlify.com/api/v1/badges/ca8f89c9-a424-4519-8a88-847076dbb615/deploy-status)](https://shrayswarup.com)
+
+
 
 This is the code for my personal website and portfolio. It is a React project bootstrapped using `create-react-app` and deployed using Netlify.
 

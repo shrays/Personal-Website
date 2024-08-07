@@ -40,6 +40,14 @@ const projects = [
     livePreview: 'https://www.lobsterlines.com/',
   },
   {
+    name: 'This Website',
+    description:
+      'Resume-style website implementing backend serverless functions and UI components to enable lightbulb hardware control over HTTP. Deployed with Netlify.',
+    stack: ['JavaScript', 'React', 'Node.js', 'HTML5', 'CSS3', 'LIFX API'],
+    sourceCode: 'https://github.com/shrays/Personal-Website',
+    livePreview: 'https://shrayswarup.com',
+  },
+  {
     name: 'Thesis Paper: Crop Yield Prediction',
     description:
       'Prediction models using current USDA crop information, NOAA climate, CMIP6 climate, and GAEZv4 soil data. Visualize future projected yield data based on different climate emission scenarios using ML techniques.',
@@ -51,14 +59,6 @@ const projects = [
     description:
       'Researched implementing and assessing fraud detection models against adversarial attacks and biasing  alongside research team with assistance from the SVB AI Lab. Used novel ML and data anomaly detection practices.',
     stack: ['JavaScript', 'HTML', 'CSS', 'React', 'NPM', 'Node.js', 'Dash', 'PostgreSQL', 'PyTorch', 'SkLearn'],
-  },
-  {
-    name: 'This Website',
-    description:
-      'Resume-style website implementing backend serverless functions and UI components to enable lightbulb hardware control over HTTP. Deployed with Netlify.',
-    stack: ['JavaScript', 'React', 'Node.js', 'HTML5', 'CSS3', 'LIFX API'],
-    sourceCode: 'https://github.com/shrays/Personal-Website',
-    livePreview: 'https://shrayswarup.com',
   },
   // {
   //   name: 'Accesibility Chrome Extension',
