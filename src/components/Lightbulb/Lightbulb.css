@@ -142,6 +142,19 @@
 .status-text {
   color: var(--clr-fg-alt);
 }
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
 @media (min-width: 622px) { /* Necessary for joint collapse/margin */
   .lightbulb__block-stack {
