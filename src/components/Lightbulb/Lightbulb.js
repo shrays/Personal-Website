@@ -73,18 +73,23 @@ const Lightbulb = () => {
   useEffect(() => {
     statusCheck()
   }, [])
-
+  
   // update color-picker
   const handleColorChange = (value) => {
     setColor(value)
-    setChanged(true)
   }
 
   //update on off buttons
   const handleToggleClick = (value) => {
     setIsOn(value)
-    setChanged(true)
   }
+
+  //enable submit if lightbulb power/color settings changed
+  useEffect(() => {
+    const powerState = power === "On"
+    const hasChanged = !(color === originalColor && powerState === isOn)
+    setChanged(hasChanged)
+  }, [color, isOn]);
 
   // set lightbulb state
   const handleSubmitClick = async () => {
@@ -120,11 +125,6 @@ const Lightbulb = () => {
     setLoading(false)
   }
 
-  // allow color block to set color to last-checked state
-  const handleStatusColorClick = () => {
-    setColor(originalColor)
-    setChanged(true)
-  }
   const { r, g, b } = hsvToRgb(originalColor.h, originalColor.s, originalColor.v)
 
   return (
@@ -154,10 +154,12 @@ const Lightbulb = () => {
             <button
               className={`controlButton onButton ${isOn ? 'active' : ''}`}
               onClick={() => handleToggleClick(true)}
+              disabled={isOn}
             > On</button>
             <button
               className={`controlButton offButton ${!isOn ? 'active' : ''}`}
               onClick={() => handleToggleClick(false)}
+              disabled={!isOn}
             > Off</button>
           </div>
           <button
@@ -183,8 +185,8 @@ const Lightbulb = () => {
             <div
               className="status-color"
               style={{backgroundColor: `rgb(${r}, ${g}, ${b})`}}
-              onClick={handleStatusColorClick}
-            />
+              onClick={() => handleColorChange(originalColor)}
+              />
           </div>
         </div>
       </div>
