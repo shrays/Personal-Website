@@ -143,7 +143,7 @@ const Lightbulb = () => {
         </div>
         <div className="lightbulb__block-stack">
           <div>
-            <span className="stack-desc">Don't wake me up.<br/>Or do. Your choice!<br/></span> 
+            <span className="stack-desc">Maybe my desk could<br/>use some better lighting...<br/></span> 
           </div>
           <button
             className={`controlButton refresh ${loading ? 'loading' : ''}`}
