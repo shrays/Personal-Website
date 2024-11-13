@@ -16,8 +16,15 @@
   -webkit-text-fill-color: transparent;
 }
 
-.about__role {
-  margin-top: 0.2em;
+.about__location {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.about__location .img--icon {
+  font-size: 1em;
+  margin-right: 5px;
 }
 
 .about__desc {
