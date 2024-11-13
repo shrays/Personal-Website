@@ -3,9 +3,9 @@ const currentYear = new Date().getFullYear()
 
 const Footer = () => (
   <footer className="footer">
-    <a href="https://shrayswarup.com" className="link footer__link">
+    <span className="footer__text">
       © {currentYear} Shray Swarup
-    </a>
+    </span>
   </footer>
 )
 
