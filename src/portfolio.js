@@ -2,7 +2,7 @@ import aboutpic from './components/Access/profile.webp'
   // properties are optional - empty fields don't show up
 
 const header = {
-  homepage: 'https://shrayswarup.com',
+  homepage: '/',
   title: 'SS.',
 }
 
@@ -24,7 +24,7 @@ const projects = [
   {
     name: 'Slanted',
     description:
-      'Designing and launching an unreleased monetizable web application featuring detailed user progress tracking, private lobbies, and an intelligently curated database alongside small developer team.',
+      'Coming Soon: A typing/reading web app featuring private lobbies, a user-currated content database, and progress tracking.',
     stack: ['TypeScript', 'React', 'Next.js', 'AWS', 'Node.js', 'CloudFormation', 'Docker', 'JIRA'],
   },
   {
