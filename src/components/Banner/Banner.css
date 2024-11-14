@@ -1,0 +1,26 @@
+.lightbulb-flag {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--clr-secondary);
+    color: white;
+    padding: 9px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .close-btn {
+    margin-right: 5px;
+    display: flex;
+  }
+  
+  .close-btn svg {
+    font-size: 20px;
+  }
+  
