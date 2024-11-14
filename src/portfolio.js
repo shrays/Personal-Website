@@ -9,12 +9,14 @@ const header = {
 const about = {
   photo: aboutpic,
   name: 'Shray Swarup',
-  role: 'Software Developer, Web/Cloud/Data',
+  role: 'Software Developer, Web/Cloud',
+  location: 'U.S. (West Coast)',
   description:
-    'Full-Stack Software Developer with experience working on projects in scalable web development with real-time capabilities, cloud architecture, and predictive modeling using agile methodologies alongside development teams!',
+    'Full-Stack Developer focused on building performant web apps and real-time systems with scalable cloud architecture, strong backend standards, and intuitive UI/UX across healthcare, technology, and consulting industries.',
   social: {
     linkedin: 'https://www.linkedin.com/in/shrayswarup',
     github: 'https://github.com/shrays',
+    email: 'shrayswarup@gmail.com',
   },
 }
 
@@ -101,8 +103,4 @@ const skills = [
   // 'Confluence',
 ]
 
-const contact = {
-  email: 'shrayswarup@gmail.com',
-}
-
-export { header, about, projects, lightbulb, skills, contact }
+export { header, about, projects, lightbulb, skills }

@@ -129,7 +129,7 @@ const Lightbulb = () => {
 
   return (
     <section className="section lightbulb" id="lightbulb">
-      <h2 className="section__title">Control my Lamp</h2>
+      <h2 className="section__title">Control my Desk Lamp</h2>
       <div className="lightbulb__block">
         <div className="lightbulb__block-stack">
           <div className="colorful">
@@ -143,7 +143,7 @@ const Lightbulb = () => {
         </div>
         <div className="lightbulb__block-stack">
           <div>
-            <span className="stack-desc">Don't wake me up.<br/>Or do. Your choice!<br/></span> 
+            <span className="stack-desc">Maybe I could use<br/>some better lighting...<br/></span> 
           </div>
           <button
             className={`controlButton refresh ${loading ? 'loading' : ''}`}
